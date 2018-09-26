@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Pet_Store_API    
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource: 
+    url: jdbc:hsqldb:file:test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: SA
+    password: password
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 215MB
+server:
+  port: 9000
+file:
+  upload-dir: ./uploads
